@@ -1,0 +1,4 @@
+perro
+zorro
+elefante
+puma

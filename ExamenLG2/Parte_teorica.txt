@@ -1,0 +1,130 @@
+1. Explica la diferencia entre una estructura de control condicional y una estructura de
+control iterativa.
+
+-Estructura de Control Condicional
+Definición: Las estructuras de control condicional permiten ejecutar diferentes bloques de código según 
+si se cumple o no una condición específica. Esto significa que el programa puede tomar decisiones basadas en 
+condiciones lógicas.
+
+Ejemplos:
+
+if: Ejecuta un bloque de código si la condición es verdadera.
+else: Ejecuta un bloque alternativo si la condición del if es falsa.
+elif: Permite comprobar múltiples condiciones en secuencia.
+Uso: Se utilizan cuando necesitas tomar decisiones en tu programa. Por ejemplo, determinar si un número es positivo, negativo o cero.
+
+-Estructura de Control Iterativa
+Definición: Las estructuras de control iterativas permiten repetir un bloque de código varias veces 
+hasta que se cumpla una condición determinada. Esto se conoce como bucles.
+
+Ejemplos:
+
+for: Repite un bloque de código un número específico de veces o itera sobre una colección (como listas).
+while: Repite un bloque de código mientras una condición sea verdadera.
+Uso: Se utilizan cuando necesitas realizar una acción repetidamente, 
+como procesar elementos en una lista o realizar cálculos hasta que se alcance una condición específica.
+
+2. Qué es una función en Python y por qué son importantes en la programación
+estructurada.
+
+Es un bloque de código reutilizable que realiza una tarea específica. 
+Las funciones pueden aceptar entradas (argumentos) y pueden devolver un resultado (valor de retorno). 
+Se definen utilizando la palabra clave def, seguida del nombre de la función y paréntesis que pueden contener
+parámetros.
+
+Importancia de las funciones en la programación estructurada
+
+-Reutilización del Código: Las funciones permiten escribir un bloque de código una vez y reutilizarlo múltiples 
+veces en diferentes partes del programa. Esto reduce la duplicación de código y facilita su mantenimiento.
+
+-Modularidad: Al dividir el programa en funciones más pequeñas y manejables, 
+se mejora la organización del código. Cada función puede enfocarse en una tarea específica, 
+lo que hace que el programa sea más fácil de entender y gestionar.
+
+-Abstracción: Las funciones permiten ocultar la complejidad detrás de una interfaz simple. 
+Los usuarios de la función no necesitan conocer los detalles internos; solo necesitan saber cómo llamarla y 
+qué esperar como resultado.
+
+-Facilidad para Probar y Depurar: Al tener funciones independientes, es más fácil 
+probar cada parte del programa por separado (pruebas unitarias). Si hay un error, 
+puedes identificar rápidamente qué función está causando el problema.
+
+-Colaboración: En proyectos grandes o cuando varios programadores trabajan juntos, las funciones 
+permiten que diferentes personas trabajen en diferentes partes del código sin interferir entre sí.
+
+-Mantenimiento: Si necesitas realizar cambios o correcciones, 
+puedes hacerlo dentro de la función sin afectar otras partes del programa que utilizan esa función.
+
+3. Describe cómo se maneja una excepción en Python.
+
+En Python, el manejo de excepciones se realiza mediante el uso de bloques try, except, else y finally. 
+Este mecanismo permite gestionar errores que pueden ocurrir durante la ejecución del programa sin 
+interrumpir su flujo normal. A continuación, se describe cada uno de estos componentes:
+
+1. Bloque try
+El bloque try contiene el código que puede generar una excepción. 
+Si ocurre una excepción dentro de este bloque, Python detiene la ejecución del código en el bloque try y 
+busca un bloque except correspondiente para manejar la excepción.
+
+2. Bloque except
+El bloque except se utiliza para manejar la excepción que se ha producido en el bloque try. 
+Puedes especificar diferentes tipos de excepciones para manejar distintos errores de manera específica.
+
+3. Bloque else
+El bloque else es opcional y se ejecuta si no se produce ninguna excepción en el bloque try. 
+Es útil para ejecutar código que debe correr solo si todo salió bien.
+
+4. Bloque finally
+El bloque finally también es opcional y se ejecuta siempre, independientemente de si ocurrió o no una excepción. 
+Se utiliza comúnmente para liberar recursos o realizar limpieza (como cerrar archivos o conexiones).
+
+4. Explica las diferencias entre listas y tuplas en Python. ¿Cuándo es más apropiado usar
+una u otra?
+En Python, tanto las listas como las tuplas son estructuras de datos que permiten almacenar colecciones de elementos. 
+Sin embargo, tienen diferencias clave en su comportamiento y uso. 
+
+Diferencias entre Listas y Tuplas
+
+-Mutabilidad:
+
+Listas: Son mutables, lo que significa que puedes modificar su contenido después de haberlas creado. 
+Puedes agregar, eliminar o cambiar elementos.
+Tuplas: Son inmutables, lo que significa que una vez que se crea una tupla, no puedes cambiar sus elementos ni 
+su tamaño.
+
+-Sintaxis:
+
+Listas: Se definen utilizando corchetes [].
+ lista = [1, 2, 3]
+
+Tuplas: Se definen utilizando paréntesis ().
+ tupla = (1, 2, 3)
+
+-Rendimiento:
+
+Listas: Debido a su mutabilidad, las listas pueden ser un poco más lentas en términos de 
+rendimiento en comparación con las tuplas.
+Tuplas: Al ser inmutables, suelen ser más rápidas y requieren menos memoria.
+
+-Uso de Memoria:
+
+Listas: Ocupan más espacio en memoria debido a la necesidad de permitir cambios.
+Tuplas: Ocupan menos espacio porque son inmutables.
+
+-Métodos Disponibles:
+
+Listas: Tienen muchos métodos incorporados para manipulación (como append(), remove(), sort(), etc.).
+Tuplas: Tienen un conjunto limitado de métodos (principalmente count() y index()).
+
+Cuándo Usar Listas o Tuplas
+
+-Usa Listas cuando:
+
+Necesites una colección de elementos que pueda cambiar durante la ejecución del programa.
+Quieras realizar operaciones como agregar o eliminar elementos.
+Estés trabajando con datos que requieran ordenación o modificación frecuente.
+
+-Usa Tuplas cuando:
+
+Quieras crear una colección de elementos que no debería cambiar (por ejemplo, coordenadas geográficas).
+Busques mejorar el rendimiento y la eficiencia en el uso 
